@@ -15,7 +15,7 @@ from rasa_sdk.events import  SlotSet, EventType
 from rasa_sdk.types import DomainDict
 
 from rasa_sdk import Action
-from .SalesforceDatabase_Connectivity import sf_api_call
+from SalesforceDatabase_Connectivity import sf_api_call
 import requests
 import json
 import re
