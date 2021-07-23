@@ -4,4 +4,5 @@ then
   PORT=5055
 fi
 
-rasa run actions --port $PORT
+rasa interactive -vv --endpoints endpoints.yml   
+rasa run -vv --endpoints endpoints actions
