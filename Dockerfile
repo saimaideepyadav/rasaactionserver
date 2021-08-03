@@ -8,6 +8,6 @@ USER root
 RUN pip3 install recognizers-text-suite
 RUN pip3 install requests
 RUN rasa train
-RUN chmod a+rwx /app/server.sh
-
-ENTRYPOINT ["/app/server.sh"]
+ENTRYPOINT []
+EXPOSE 5005
+CMD $(echo "rasa run actions -p $PORT --debug" | sed 's/=//')
